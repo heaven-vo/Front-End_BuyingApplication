@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shopping_food_app/screens/home_screen.dart';
 import 'package:shopping_food_app/screens/landing_screen.dart';
 import 'package:shopping_food_app/screens/login_screen.dart';
+import 'package:shopping_food_app/screens/register_screen.dart';
 import 'package:shopping_food_app/screens/welcome_screen.dart';
 
 class RouteGenerator {
@@ -17,6 +18,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => WelcomeScreen());
       case '/login':
         return MaterialPageRoute(builder: (_) => LoginScreen());
+      case '/register':
+        return MaterialPageRoute(builder: (_) => RegisterScreen());
       case '/home':
         return MaterialPageRoute(builder: (_) => HomeScreen());
       default:

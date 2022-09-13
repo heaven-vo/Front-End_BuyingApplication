@@ -18,7 +18,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: SafeArea(
               child: Container(
                   padding:
-                      EdgeInsets.only(left: 25, top: 25, right: 25, bottom: 25),
+                      EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 20),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: Center(
                                     child: Container(
                                   height: 50,
-                                  width: MediaQuery.of(context).size.width - 50,
+                                  width: MediaQuery.of(context).size.width - 40,
                                   child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                       primary: MaterialColors.primary,
@@ -105,8 +105,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                           color: MaterialColors.secondary),
                                     ),
                                     onPressed: () {
-                                      Navigator.pushReplacementNamed(
-                                          context, '/login');
+                                      Navigator.pushNamed(
+                                          context, '/register');
                                     },
                                   ),
                                 ))),
@@ -116,7 +116,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: Center(
                                     child: Container(
                                   height: 50,
-                                  width: MediaQuery.of(context).size.width - 50,
+                                  width: MediaQuery.of(context).size.width - 40,
                                   child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                       primary:
