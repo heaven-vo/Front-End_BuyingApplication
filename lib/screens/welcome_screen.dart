@@ -50,12 +50,12 @@ class WelcomeScreen extends StatelessWidget {
                     )),
                   )),
               Positioned(
-                  bottom: 40,
+                  bottom: 35,
                   child: Container(
                       width: MediaQuery.of(context).size.width,
                       child: Center(
                           child: Container(
-                        height: 60,
+                        height: 55,
                         width: MediaQuery.of(context).size.width - 80,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
